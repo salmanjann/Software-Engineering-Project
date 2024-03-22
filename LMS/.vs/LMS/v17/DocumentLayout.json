@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Coding\\SE\\LMS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|d:\\coding\\se\\lms\\lms\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|solutionrelative:lms\\attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|d:\\coding\\se\\lms\\lms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|solutionrelative:lms\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|d:\\coding\\se\\lms\\lms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|solutionrelative:lms\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|d:\\coding\\se\\lms\\lms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|solutionrelative:lms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|d:\\coding\\se\\lms\\lms\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|solutionrelative:lms\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|d:\\coding\\se\\lms\\lms\\courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|solutionrelative:lms\\courseregister.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|d:\\coding\\se\\lms\\lms\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{668D0CC2-A855-48EC-BC65-1DC442444E4B}|LMS\\LMS.csproj|solutionrelative:lms\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "signup.cs",
+              "DocumentMoniker": "D:\\Coding\\SE\\LMS\\LMS\\signup.cs",
+              "RelativeDocumentMoniker": "LMS\\signup.cs",
+              "ToolTip": "D:\\Coding\\SE\\LMS\\LMS\\signup.cs",
+              "RelativeToolTip": "LMS\\signup.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAAwF0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T17:38:00.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "login.cs",
+              "DocumentMoniker": "D:\\Coding\\SE\\LMS\\LMS\\login.cs",
+              "RelativeDocumentMoniker": "LMS\\login.cs",
+              "ToolTip": "D:\\Coding\\SE\\LMS\\LMS\\login.cs",
+              "RelativeToolTip": "LMS\\login.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T17:36:42.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "courseregister.cs",
+              "DocumentMoniker": "D:\\Coding\\SE\\LMS\\LMS\\courseregister.cs",
+              "RelativeDocumentMoniker": "LMS\\courseregister.cs",
+              "ToolTip": "D:\\Coding\\SE\\LMS\\LMS\\courseregister.cs",
+              "RelativeToolTip": "LMS\\courseregister.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T17:35:24.694Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "attendance.cs",
+              "DocumentMoniker": "D:\\Coding\\SE\\LMS\\LMS\\attendance.cs",
+              "RelativeDocumentMoniker": "LMS\\attendance.cs",
+              "ToolTip": "D:\\Coding\\SE\\LMS\\LMS\\attendance.cs",
+              "RelativeToolTip": "LMS\\attendance.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAjwDYAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T17:34:00.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "D:\\Coding\\SE\\LMS\\LMS\\Form1.cs",
+              "RelativeDocumentMoniker": "LMS\\Form1.cs",
+              "ToolTip": "D:\\Coding\\SE\\LMS\\LMS\\Form1.cs",
+              "RelativeToolTip": "LMS\\Form1.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAjwCAAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T17:16:34.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "home.cs",
+              "DocumentMoniker": "D:\\Coding\\SE\\LMS\\LMS\\home.cs",
+              "RelativeDocumentMoniker": "LMS\\home.cs",
+              "ToolTip": "D:\\Coding\\SE\\LMS\\LMS\\home.cs",
+              "RelativeToolTip": "LMS\\home.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAA9wDUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T17:14:20.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "D:\\Coding\\SE\\LMS\\LMS\\Admin.cs",
+              "RelativeDocumentMoniker": "LMS\\Admin.cs",
+              "ToolTip": "D:\\Coding\\SE\\LMS\\LMS\\Admin.cs",
+              "RelativeToolTip": "LMS\\Admin.cs",
+              "ViewState": "AQIAAE0BAAAAAAAAAAAgwFsBAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T08:12:06.563Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

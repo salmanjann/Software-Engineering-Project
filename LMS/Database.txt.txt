@@ -1,0 +1,178 @@
+create database LMS;
+use LMS;
+
+CREATE TABLE ADMIN(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    name varchar(50),
+    username varchar(50) unique,
+    email varchar(50),
+    password varchar(50)
+);
+
+
+CREATE TABLE TEACHER(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    name varchar(50),
+    username varchar(50) unique,
+    email varchar(50),
+    password varchar(50)
+);
+drop table student;
+CREATE TABLE STUDENT(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    name varchar(50),
+    USERID INT,
+    username varchar(50) unique,
+    email varchar(50),
+    password varchar(50),
+    rollNo varchar(8)
+);
+
+insert into ADMIN(name, username,email,password) value 
+('admin','admin','admin@LMS.com','admin');
+
+insert into TEACHER(name, username,email,password) value 
+('teacher','teacher','teacher@LMS.com','teacher');
+
+insert into STUDENT(name, USERID,username,email,password,rollNo) value 
+('student',1,'student','student@LMS.com','student','21I-2574');
+
+-- Insert more records for TEACHER
+INSERT INTO TEACHER (name, username, email, password) VALUES 
+('teacher2', 'teacher2', 'teacher2@LMS.com', 'teacher2'),
+('teacher3', 'teacher3', 'teacher3@LMS.com', 'teacher3'),
+('teacher4', 'teacher4', 'teacher4@LMS.com', 'teacher4');
+;
+
+-- Insert more records for STUDENT
+INSERT INTO STUDENT (name, USERID,username, email, password, rollNo) VALUES 
+('student2',2, 'student2', 'student2@LMS.com', 'student2', '21I-1234'),
+('student3',3, 'student3', 'student3@LMS.com', 'student3', '21I-5678'),
+('student4',4, 'student4', 'student4@LMS.com', 'student4', '21I-5178');
+
+
+-- Course
+drop TABLE Course;
+CREATE TABLE Course (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    courseId varchar(255) NOT NULL,
+    courseName VARCHAR(255) NOT NULL,
+    courseDescription TEXT
+);
+-- Drop the existing courseSection table if it exists
+DROP TABLE IF EXISTS courseSection;
+-- Create the courseSection table with sectionName column
+CREATE TABLE courseSection (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    sectionName varchar(1) NOT NULL,
+    courseName VARCHAR(255) NOT NULL,
+    teacherName VARCHAR(255)
+);
+-- Create a trigger to automatically set sectionName
+DELIMITER //
+CREATE TRIGGER before_insert_courseSection
+BEFORE INSERT ON courseSection
+FOR EACH ROW
+BEGIN
+    DECLARE next_value CHAR(1);
+    
+    -- Calculate the next alphabet based on the existing values in the table
+    SELECT IFNULL(CHAR(64 + COUNT(DISTINCT sectionName) + 1), 'A') INTO next_value
+    FROM courseSection
+    WHERE courseName = NEW.courseName;
+
+    -- Set the sectionName based on the next_value (as alphabet)
+    SET NEW.sectionName = next_value;
+END;
+//
+DELIMITER ;
+-- Registered Students table
+CREATE TABLE REGISTERED_STUDENTS(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    courseName VARCHAR(255) NOT NULL,
+    sectionName varchar(1) NOT NULL,
+    studentRollNo VARCHAR(255)
+);
+
+-- Insert some records for REGISTERED_STUDENTS
+INSERT INTO REGISTERED_STUDENTS (courseName, sectionName, studentRollNo) VALUES 
+('PF', 'A', '21I-1234'),
+('OOP', 'A', '21I-1234'),
+('DS', 'A', '21I-5178');
+
+select * from Course;
+select * from courseSection;
+select * from REGISTERED_STUDENTS;
+
+Create table offered_course
+(
+courseid VARCHAR(30),
+cname varchar(50),
+OfferCourse VARCHAR(3) 
+);
+INSERT INTO offered_course (courseid, cname, OfferCourse) VALUES ('C001', 'Introduction to Programming', 'Yes');
+INSERT INTO offered_course (courseid, cname, OfferCourse) VALUES ('C002', 'Database Management Systems', 'Yes');
+INSERT INTO offered_course (courseid, cname, OfferCourse) VALUES ('C003', 'Web Development', 'Yes');
+INSERT INTO offered_course (courseid, cname, OfferCourse) VALUES ('C004', 'Software Engineering', 'Yes');
+INSERT INTO offered_course (courseid, cname, OfferCourse) VALUES ('C005', 'Data Structures and Algorithms', 'Yes');
+INSERT INTO offered_course (courseid, cname, OfferCourse) VALUES ('C006', 'Computer Networks', 'Yes');
+INSERT INTO offered_course (courseid, cname, OfferCourse) VALUES ('C007', 'Artificial Intelligence', 'Yes');
+INSERT INTO offered_course (courseid, cname, OfferCourse) VALUES ('C008', 'Operating Systems', 'Yes');
+
+CREATE TABLE User_
+(
+  USERID INT NOT NULL PRIMARY KEY,
+  USERNAME VARCHAR(50),
+  PASSWORD VARCHAR(30),
+  DOB VARCHAR(20),
+  PHONE VARCHAR(20),
+  EMAIL VARCHAR(60)
+);
+SELECT *from User_;
+
+CREATE TABLE Student
+(
+  NAME VARCHAR(50),
+  ROLLNO VARCHAR(30) NOT NULL PRIMARY KEY,
+  USERID INT,
+  DEPT VARCHAR(30),
+  BATCH VARCHAR(30),
+  DEGREE VARCHAR(30),
+  FOREIGN KEY (USERID) REFERENCES User_(USERID)
+);
+CREATE TABLE registered_Courses (
+    courseID VARCHAR(30) NOT NULL ,
+    Studentid VARCHAR(30) NOT NULL,
+    RegisterCourse VARCHAR(4) NOT NULL
+    );
+	-- Add a composite primary key constraint to the registered_Courses table
+ALTER TABLE registered_Courses
+ADD CONSTRAINT PK_StudentCourse PRIMARY KEY (courseID, Studentid);
+
+	SELECT * from registered_Courses;
+-- Insert data from User_ table into Student table
+-- Inserting a record into the User_ table
+INSERT INTO User_ (USERID, USERNAME, PASSWORD, DOB, PHONE, EMAIL)
+VALUES (1, 'JohnDoe', 'password123', '1990-01-01', '+1234567890', 'john.doe@example.com');
+
+-- Inserting a record into the Student table for the same user
+INSERT INTO Student (NAME, ROLLNO, USERID, DEPT, BATCH, DEGREE)
+VALUES ('John Doe', 'JD001', 1, 'Computer Science', '2020', 'B.Sc');
+
+      
+create table attendance(
+lecture_no int,
+date_ Date,
+studentid VARCHAR(30),
+courseid VARCHAR(30),
+status VARCHAR(10)
+
+);
+
+
+INSERT INTO attendance (lecture_no, date_, studentid, courseid, status) 
+VALUES 
+(2, '2024-03-25', '3', 'C001', 'Present'),
+(2, '2024-03-26', '3', 'C002', 'Present'),
+(2, '2024-03-27', '3', 'C003', 'Present');
+
